@@ -5,13 +5,16 @@ document.getElementById('iniciar').addEventListener('click', (e)=>{
     const password= inputPassword.value
     var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$/;
 
-    if(regex.test(password) ){
-        window.location.href = 'menu.html';
-    console.log("iniciando boton")
+    window.location.href = 'view/menu.html';
 
-    }else{
-        alert("el dato es menor de 8 dijitos")
-    }
+    // if(regex.test(password) ){
+    // window.location.href = 'view/menu.html';
+    // console.log("iniciando boton")
+
+    // }else{
+    //     alert("el dato es menor de 8 dijitos")
+    // }
     
     
 })
+
